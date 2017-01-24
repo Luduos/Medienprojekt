@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &162336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493994}
+  - 114: {fileID: 11476846}
+  - 114: {fileID: 11423540}
+  - 114: {fileID: 11432918}
+  m_Layer: 0
+  m_Name: MortarExplosion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &493994
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11423540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 608a111447b0b584a8aa4fba29d2bb4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectDuration: 0.75
+  m_HealthChange: -10
+  m_ExplosionForce: 5
+  m_ExplosionYOffset: 0.5
+--- !u!114 &11432918
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61db62ede05ca3c4b85ff0cb8d3ce1b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectDuration: 1
+  m_ExplosionParticleEffect: {fileID: 19844572, guid: e0c0997e130154448b4aaef995d3e5dd,
+    type: 2}
+--- !u!114 &11476846
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d64161e3e2cc4ed48afb4c2bcfef7b01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UseableSprite: {fileID: 0}
+  m_GamelogicEffect: {fileID: 11423540}
+  m_VisualEffect: {fileID: 11432918}
+  m_ExplosionCanHitTheseLayers:
+    serializedVersion: 2
+    m_Bits: 4294967259
+  m_ExplosionRadius: 2.5
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 162336}
+  m_IsPrefabParent: 1

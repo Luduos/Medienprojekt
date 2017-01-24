@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &160678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 475474}
+  - 114: {fileID: 11476026}
+  - 114: {fileID: 11469622}
+  - 114: {fileID: 11462718}
+  m_Layer: 0
+  m_Name: FreezeGunPrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &475474
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160678}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.977167, y: -3.5379314, z: 5.306318}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11462718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 615cc5908e735134eb1e7e434b3dddc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectDuration: 1
+  m_EffectMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StartColor: {r: 0, g: 0, b: 1, a: 1}
+  m_EndColor: {r: 0, g: 1, b: 1, a: 1}
+  m_EffectStartWidth: 0.25
+  m_EffectEndWidth: 0.5
+  m_StartOffset: {x: 0, y: 0.4, z: 0}
+  m_EndOffset: {x: 0, y: 0.4, z: 0}
+--- !u!114 &11469622
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404db0d8bda421b439bd6442da54f0d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectDuration: 1
+  m_HealthChange: -5
+  m_GlideSpeedMultiplicator: 0.5
+--- !u!114 &11476026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7072346e3617a9140bfcb257d52ad4fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UseableSprite: {fileID: 21300000, guid: 8a7cea9d5458b494487a16b12415a934, type: 3}
+  m_GamelogicEffect: {fileID: 11469622}
+  m_VisualEffect: {fileID: 11462718}
+  m_FreezeGunCanHitTheseLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  m_FreezeGunStartOffset: {x: 0, y: 0.5, z: 0}
+  m_MaxHitDistance: 50
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 160678}
+  m_IsPrefabParent: 1
